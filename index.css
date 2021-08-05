@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -10;
+}
+
+.audio-timer,
+.player,
+.audio-picker {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+
+.audio-timer button {
+    padding: 1rem;
+    width: 40%;
+    height: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.audio-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+button {
+    outline: none;
+}
+
+.audio-picker button:nth-child(1) {
+    background: #4972a1;
+}
+
+.audio-picker button:nth-child(2) {
+    background: #a14f49;
+}
+
+.audio-picker button img {
+    height: 100%;
+}
+
+.player svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player h3 {
+    position: absolute;
+    bottom: 50;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.play {
+    z-index: 3;
+}
